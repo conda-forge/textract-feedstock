@@ -1,21 +1,22 @@
-
 {%set name = "textract" %}
 {%set version = "1.4.0" %}
+{%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
 {%set hash_val = "a10b5038cb15df45f28f1da6376ffd59579381702f21667c922cbd55daed5755" %}
+{%set build_num = "1" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
   skip: True  # [py3k]
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:

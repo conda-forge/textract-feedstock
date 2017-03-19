@@ -29,13 +29,14 @@ requirements:
     - argcomplete
     - chardet
     - python-pptx >=0.5.1
-    - msg-extractor
-    - python-docx
-    - pdfminer ==20140328
+    - pdfminer.six
+    - docx2txt
     - beautifulsoup4
     - xlrd
     - ebooklib
     - speechrecognition >=3.1.0
+    - msg-extractor
+    - six
 
 test:
   imports:
@@ -76,10 +77,10 @@ test:
 
 about:
   home: https://github.com/deanmalmgren/textract
-  license: MIT
   license_file: LICENSE
+  license: MIT
   license_family: MIT
-  summary: 'Extract text from any document. no muss. no fuss.'
+  summary: Extract text from any document. no muss. no fuss.
   doc_url: https://textract.readthedocs.io/en/latest/
   dev_url: https://github.com/deanmalmgren/textract
 

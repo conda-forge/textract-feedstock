@@ -1,8 +1,8 @@
 {%set name = "textract" %}
-{%set version = "1.4.0" %}
+{%set version = "1.5.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "a10b5038cb15df45f28f1da6376ffd59579381702f21667c922cbd55daed5755" %}
+{%set hash_val = "0e73dd1679f817bf985dd08e9e8b7e34715bb116d6ec10285a9149a145c457d7" %}
 {%set build_num = "1" %}
 
 package:
@@ -29,13 +29,14 @@ requirements:
     - argcomplete
     - chardet
     - python-pptx >=0.5.1
-    - msg-extractor
-    - python-docx
-    - pdfminer ==20140328
+    - pdfminer.six
+    - docx2txt
     - beautifulsoup4
     - xlrd
     - ebooklib
     - speechrecognition >=3.1.0
+    - msg-extractor
+    - six
 
 test:
   imports:
@@ -76,10 +77,10 @@ test:
 
 about:
   home: https://github.com/deanmalmgren/textract
-  license: MIT
   license_file: LICENSE
+  license: MIT
   license_family: MIT
-  summary: 'Extract text from any document. no muss. no fuss.'
+  summary: Extract text from any document. no muss. no fuss.
   doc_url: https://textract.readthedocs.io/en/latest/
   dev_url: https://github.com/deanmalmgren/textract
 

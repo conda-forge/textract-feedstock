@@ -1,9 +1,9 @@
-{%set name = "textract" %}
-{%set version = "1.6.1" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "86b31dccdde8a31a0f5f307ae384590ba1f7ebd09640acd15f1b178a0b02" %}
-{%set build_num = "0" %}
+{% set name = "textract" %}
+{% set version = "1.6.1" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "86b31dccdde8a31a0f5f307ae384590ba1f7ebd09640acd15f1b178a0b02" %}
+{% set build_num = "0" %}
 
 package:
   name: {{ name }}

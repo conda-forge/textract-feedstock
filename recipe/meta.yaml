@@ -16,8 +16,9 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
+    - pip
     - setuptools
 
   run:
@@ -70,6 +71,10 @@ test:
 
   commands:
     - textract -h
+    - pip check
+    
+  requires:
+    - pip
 
 about:
   home: https://github.com/deanmalmgren/textract

@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
 
   run:
-    - python
+    - python >=3.6
     - argcomplete
     - chardet
     - python-pptx >=0.5.1

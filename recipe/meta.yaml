@@ -72,10 +72,6 @@ test:
 
   commands:
     - textract -h
-    - pip check
-    
-  requires:
-    - pip
 
 about:
   home: https://github.com/deanmalmgren/textract

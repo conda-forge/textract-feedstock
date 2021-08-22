@@ -1,6 +1,6 @@
 {% set name = "textract" %}
-{% set version = "1.6.3" %}
-{% set sha256 = "6213b2f923b85af8e5e380241db9361e3f5dbd444a74108745fd4121ae151310" %}
+{% set version = "1.6.4" %}
+{% set sha256 = "35ac0302e2dbe53eb8d513b4cf0741264ea89a695fd89a3d48e3bd94d517cef6" %}
 
 package:
   name: {{ name }}
